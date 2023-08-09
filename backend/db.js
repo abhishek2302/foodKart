@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 // const mongoDbClient = require("mongodb").MongoClient
 const mongoURI = process.env.DB_URL || 'mongodb://localhost:27017/food_app';
 module.exports = function (callback) {
